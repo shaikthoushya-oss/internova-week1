@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project - Student Portal</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Student Portal logo" width="120">
+        <h1>Student Portal</h1>
+        <p><i>Learn. Build. <b>Grow.</b></i></p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#register">Register</a>
+    </nav>
+    <hr>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <!-- Text formatting -->
+            <p>Welcome to the <b>Student Portal</b>. We teach <u>web development</u> from the basics.</p>
+            <p>Visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a> to learn more.</p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <article>
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML
+                        <ul>
+                            <li>Structure</li>
+                            <li>Forms</li>
+                        </ul>
+                    </li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Steps to Start</h3>
+                <ol>
+                    <li>Register</li>
+                    <li>Attend classes</li>
+                    <li>Complete assignments</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="schedule">
+            <h2>Weekly Schedule</h2>
+            <table border="1" cellpadding="6">
+                <thead>
+                    <tr><th>Day</th><th>Topic</th><th>Time</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>HTML Basics</td><td>10:00 AM</td></tr>
+                    <tr><td>Wednesday</td><td>Forms</td><td>10:00 AM</td></tr>
+                    <tr><td>Saturday</td><td>Mentorship Session</td><td>11:00 AM</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Register Now</h2>
+            <form action="#" method="post">
+                <p><label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required></p>
+
+                <p><label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required></p>
+
+                <p>Gender:
+                <input type="radio" id="m" name="gender" value="male"><label for="m">Male</label>
+                <input type="radio" id="f" name="gender" value="female"><label for="f">Female</label></p>
+
+                <p><label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option>Web Development</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                </select></p>
+
+                <p><input type="checkbox" id="news" name="news"><label for="news"> Send me updates</label></p>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Student Portal | E=mc<sup>2</sup> | H<sub>2</sub>O</p>
+        <p><a href="task1_structure.html">Task 1</a> | <a href="task5_semantic.html">Task 5</a></p>
+    </footer>
+</body>
+</html>
